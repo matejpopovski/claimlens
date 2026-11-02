@@ -17,7 +17,7 @@ jobs:
       - name: Install (CPU-only torch from the lockfile)
         run: uv sync --frozen
       - name: Lockfile has no GPU packages
-        run: "! grep -qE '^name = \"(nvidia|cuda)' uv.lock"
+        run: test "$(grep -cE '^name = "(nvidia|cuda)' uv.lock)" = 0
       - name: Format
         run: uv run --frozen ruff format --check src tests scripts
       - name: Lint

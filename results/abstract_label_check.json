@@ -1,0 +1,107 @@
+{
+  "note": "Tuning splits only. as_evaluated matches the behaviour behind results/final.",
+  "val": {
+    "as_evaluated": {
+      "abstract_label_only": {
+        "precision": 0.6376811594202898,
+        "recall": 0.5641025641025641,
+        "f1": 0.5986394557823129
+      },
+      "abstract_label_rationale": {
+        "precision": 0.5652173913043478,
+        "recall": 0.5,
+        "f1": 0.5306122448979592
+      },
+      "sentence_selection": {
+        "precision": 0.5681818181818182,
+        "recall": 0.3816793893129771,
+        "f1": 0.4566210045662101
+      },
+      "sentence_selection_label": {
+        "precision": 0.5340909090909091,
+        "recall": 0.35877862595419846,
+        "f1": 0.4292237442922374
+      }
+    },
+    "with_bias_on_abstract_labels": {
+      "abstract_label_only": {
+        "precision": 0.46551724137931033,
+        "recall": 0.6923076923076923,
+        "f1": 0.5567010309278351
+      },
+      "abstract_label_rationale": {
+        "precision": 0.4051724137931034,
+        "recall": 0.6025641025641025,
+        "f1": 0.4845360824742268
+      },
+      "sentence_selection": {
+        "precision": 0.42962962962962964,
+        "recall": 0.44274809160305345,
+        "f1": 0.43609022556390975
+      },
+      "sentence_selection_label": {
+        "precision": 0.4074074074074074,
+        "recall": 0.4198473282442748,
+        "f1": 0.41353383458646614
+      }
+    },
+    "gold_abstract_outcomes": {
+      "abstracts": 78,
+      "correct": 45,
+      "wrong_direction": 3,
+      "not_enough_info": 30
+    }
+  },
+  "calib": {
+    "as_evaluated": {
+      "abstract_label_only": {
+        "precision": 0.5652173913043478,
+        "recall": 0.5,
+        "f1": 0.5306122448979592
+      },
+      "abstract_label_rationale": {
+        "precision": 0.5072463768115942,
+        "recall": 0.44871794871794873,
+        "f1": 0.4761904761904762
+      },
+      "sentence_selection": {
+        "precision": 0.47619047619047616,
+        "recall": 0.2857142857142857,
+        "f1": 0.3571428571428571
+      },
+      "sentence_selection_label": {
+        "precision": 0.42857142857142855,
+        "recall": 0.2571428571428571,
+        "f1": 0.3214285714285714
+      }
+    },
+    "with_bias_on_abstract_labels": {
+      "abstract_label_only": {
+        "precision": 0.4015748031496063,
+        "recall": 0.6538461538461539,
+        "f1": 0.4975609756097561
+      },
+      "abstract_label_rationale": {
+        "precision": 0.33858267716535434,
+        "recall": 0.5512820512820513,
+        "f1": 0.4195121951219512
+      },
+      "sentence_selection": {
+        "precision": 0.352112676056338,
+        "recall": 0.35714285714285715,
+        "f1": 0.35460992907801414
+      },
+      "sentence_selection_label": {
+        "precision": 0.30985915492957744,
+        "recall": 0.3142857142857143,
+        "f1": 0.31205673758865243
+      }
+    },
+    "gold_abstract_outcomes": {
+      "abstracts": 78,
+      "correct": 39,
+      "wrong_direction": 4,
+      "not_enough_info": 35
+    }
+  }
+}

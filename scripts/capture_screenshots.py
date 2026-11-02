@@ -56,7 +56,9 @@ def main() -> None:
             if outcome != shot["expect"]:
                 raise SystemExit(f"{shot['claim']!r} gave {outcome}, expected {shot['expect']}")
             check_page(page, outcome)
-            page.screenshot(path=args.out / shot["file"], full_page=True)
+            clip_height = shot.get("clip_height")
+            clip = {"x": 0, "y": 0, "width": 1100, "height": clip_height} if clip_height else None
+            page.screenshot(path=args.out / shot["file"], full_page=True, clip=clip)
             print(f"{shot['file']}: {outcome}")
 
         phone = browser.new_page(viewport={"width": 390, "height": 844}, color_scheme="light")

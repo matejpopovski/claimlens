@@ -50,9 +50,9 @@ def test_premise_and_hypothesis_are_not_swapped(stock_nli):
 
 
 def test_real_encoder_prefers_the_related_passage():
-    spec = MODELS["bge-small"]
+    spec = MODELS["bge-base"]
     encoder = TextEncoder(
-        require(local_path("bge-small")),
+        require(local_path("bge-base")),
         pooling=spec.pooling,
         query_prefix=spec.query_prefix,
         device="cpu",

@@ -1,0 +1,28 @@
+[
+  {
+    "claim": "Bariatric surgery leads to positive outcomes in mental health.",
+    "expect": "ABSTAINED",
+    "file": "hero.png",
+    "clip_height": 1420
+  },
+  {
+    "claim": "A deficiency of folate increases blood levels of homocysteine.",
+    "expect": "SUPPORTS",
+    "file": "supported.png"
+  },
+  {
+    "claim": "The mean suicide rate in women is lower after miscarriage than live birth.",
+    "expect": "REFUTES",
+    "file": "refuted.png"
+  },
+  {
+    "claim": "Bariatric surgery leads to positive outcomes in mental health.",
+    "expect": "ABSTAINED",
+    "file": "abstained-conflict.png"
+  },
+  {
+    "claim": "The Moon orbits Saturn every twelve days.",
+    "expect": "ABSTAINED",
+    "file": "abstained-off-topic.png"
+  }
+]

@@ -133,7 +133,7 @@ def reliability(results: Path, output: Path) -> None:
             )
         axes.grid(True)
         axes.set_xlim(0.2, 1.02)
-        axes.set_ylim(0, 1.05)
+        axes.set_ylim(-0.04, 1.05)
         axes.set_aspect("equal", adjustable="box")
         axes.set_title(f"{title}: ECE {block['ece_10_bins']:.3f}", fontsize=10)
         axes.set_xlabel("Mean confidence in bin")

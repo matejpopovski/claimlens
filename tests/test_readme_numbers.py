@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-DECIMAL = re.compile(r"(?<![\d.\w-])(\d+\.\d+)(%?)(?![\d.]*\.\d|\w)")
+DECIMAL = re.compile(r"(?<![\d.\w:/-])(\d+\.\d+)(%?)(?![\d.]*\.\d|\w)")
 
 
 def result_values() -> list[float]:
@@ -27,7 +27,8 @@ def result_values() -> list[float]:
 
 
 def prose(text: str) -> str:
-    return re.sub(r"```.*?```", "", text, flags=re.S)
+    """Drop fenced and inline code, where a decimal is a version or a command argument."""
+    return re.sub(r"`[^`\n]*`", "", re.sub(r"```.*?```", "", text, flags=re.S))
 
 
 def untraceable(text: str, values: list[float]) -> list[str]:
@@ -55,3 +56,5 @@ def test_the_check_notices_an_invented_number():
 def test_versions_and_code_blocks_are_not_treated_as_results():
     assert untraceable("playwright 1.49.1 and fastapi 0.115.0", []) == []
     assert untraceable(prose("```\nnum = 0.123\n```"), []) == []
+    assert untraceable(prose("needs `python 3.12` and `--lr 0.002`"), []) == []
+    assert untraceable("see arXiv:2104.08663 and https://arxiv.org/abs/2010.11930", []) == []

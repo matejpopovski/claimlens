@@ -188,9 +188,10 @@ async function loadPage() {
   if (policy.conflict_probability !== null) {
     checks.push("no confident disagreement between abstracts");
   }
+  const weights = health.weights === "finetuned" ? "fine-tuned" : health.weights;
   document.getElementById("policy").textContent =
-    `An answer requires ${checks.join(", ")}. Each abstract set is the top ${health.top_k} after ` +
-    `reranking. Thresholds were fixed on a calibration split. Weights: ${health.weights}.`;
+    `An answer requires ${checks.join(", ")}. The top ${health.top_k} abstracts after ` +
+    `reranking are read. Thresholds were fixed on a calibration split. Weights: ${weights}.`;
   if (health.weights_note) {
     const note = document.getElementById("weights-note");
     note.textContent = health.weights_note;

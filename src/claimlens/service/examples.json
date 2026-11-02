@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "claim": "A deficiency of folate increases blood levels of homocysteine.",
+    "source": "SciFact claim, calibration split, CC BY 4.0"
+  },
+  {
+    "claim": "The mean suicide rate in women is lower after miscarriage than live birth.",
+    "source": "SciFact claim, calibration split, CC BY 4.0"
+  },
+  {
+    "claim": "Deleting Raptor increases G-CSF levels.",
+    "source": "SciFact claim, calibration split, CC BY 4.0"
+  },
+  {
+    "claim": "Bariatric surgery leads to positive outcomes in mental health.",
+    "source": "SciFact claim, calibration split, CC BY 4.0"
+  },
+  {
+    "claim": "A deficiency of vitamin B12 decreases blood levels of homocysteine.",
+    "source": "SciFact claim, calibration split, CC BY 4.0"
+  },
+  {
+    "claim": "The Moon orbits Saturn every twelve days.",
+    "source": "Hand-written, deliberately outside the corpus"
+  }
+]
