@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>claimlens</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <h1>claimlens</h1>
+        <p class="standfirst">
+          Checks a scientific claim against <span id="corpus-size">a corpus of</span> abstracts,
+          marks the sentences it relied on, and declines to answer when it cannot vouch for the
+          result.
+        </p>
+      </header>
+
+      <aside id="weights-note" class="notice" hidden></aside>
+
+      <form id="claim-form" class="claim-form">
+        <label for="claim">Claim</label>
+        <textarea
+          id="claim"
+          rows="2"
+          minlength="3"
+          maxlength="500"
+          required
+          placeholder="State one scientific claim as a sentence."
+        ></textarea>
+        <div class="form-row">
+          <div id="examples" class="examples" aria-label="Example claims"></div>
+          <button id="submit" type="submit">Verify</button>
+        </div>
+      </form>
+
+      <p id="status" class="status" role="status"></p>
+
+      <section id="finding" class="finding" aria-live="polite" hidden></section>
+      <section id="evidence" class="evidence" hidden></section>
+
+      <footer class="colophon">
+        <p id="policy"></p>
+        <p>
+          Claims and annotations: SciFact, CC BY 4.0. Abstracts: S2ORC, ODC-By 1.0. Evidence comes
+          only from this fixed corpus, so a result describes these abstracts and is not medical or
+          scientific advice.
+        </p>
+      </footer>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

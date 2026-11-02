@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Install (CPU-only torch from the lockfile)
+        run: uv sync --frozen
+      - name: Lockfile has no GPU packages
+        run: "! grep -qE '^name = \"(nvidia|cuda)' uv.lock"
+      - name: Format
+        run: uv run --frozen ruff format --check src tests scripts
+      - name: Lint
+        run: uv run --frozen ruff check src tests scripts
+      - name: Tests (tiny random models on CPU, no downloads; tests marked `models` are skipped)
+        run: uv run --frozen pytest -q

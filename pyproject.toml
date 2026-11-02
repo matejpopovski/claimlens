@@ -1,0 +1,60 @@
+[project]
+name = "claimlens"
+version = "0.1.0"
+description = "Scientific claim verification on SciFact: hybrid retrieval, a fine-tuned NLI verdict model, and calibrated abstention."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "huggingface-hub>=0.26,<1",
+    "numpy>=2.0",
+    "protobuf>=5",
+    "safetensors>=0.4",
+    "sentencepiece>=0.2",
+    "torch>=2.5",
+    "transformers>=4.46,<5",
+    "uvicorn>=0.32",
+]
+
+[dependency-groups]
+dev = ["httpx>=0.27", "pytest>=8.0", "rank-bm25>=0.2.2", "ruff>=0.6", "scikit-learn>=1.5"]
+report = ["matplotlib>=3.9"]
+screens = ["playwright==1.49.1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/claimlens"]
+
+[tool.uv]
+environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'"]
+
+# GitHub runners are CPU-only, and the default Linux torch wheels pull several
+# GB of CUDA libraries that nothing here uses.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+# Greek letters are the subject of these files, not lookalike characters.
+"src/claimlens/text.py" = ["RUF001", "RUF002", "RUF003", "SIM905"]
+"tests/test_text.py" = ["RUF001"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -m 'not models'"
+markers = ["models: needs real pretrained weights and data on disk; skipped by default and in CI"]
