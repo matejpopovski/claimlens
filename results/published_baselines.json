@@ -1,0 +1,91 @@
+{
+  "_note": "Copied by hand from the cited tables after reading the papers. Comparable only where the split and metric definition match, which is why test-set tables from the SciFact and MultiVerS papers are not listed: those use the unreleased SciFact test labels.",
+  "beir": {
+    "citation": "Thakur, Reimers, Ruckl\u00e9, Srivastava, Gurevych. BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models. NeurIPS Datasets and Benchmarks 2021. arXiv:2104.08663",
+    "split": "BEIR SciFact test queries, which are the 300 SciFact dev claims",
+    "ndcg@10_table_2": {
+      "BM25": 0.665,
+      "docT5query": 0.675,
+      "TAS-B": 0.643,
+      "ColBERT": 0.671,
+      "BM25+CE": 0.688
+    },
+    "recall@100_table_9": {
+      "BM25": 0.908,
+      "docT5query": 0.914,
+      "TAS-B": 0.891,
+      "ColBERT": 0.878,
+      "BM25+CE": 0.908
+    }
+  },
+  "vert5erini": {
+    "citation": "Pradeep, Ma, Nguyen, Clarke, Lin. Scientific Claim Verification with VerT5erini. LOUHI 2021. arXiv:2010.11930",
+    "split": "SciFact development set",
+    "evidence_micro_recall_table_6": {
+      "Oracle": {
+        "R@3": 97.61,
+        "R@5": 100.0
+      },
+      "TF-IDF": {
+        "R@3": 69.38,
+        "R@5": 75.6
+      },
+      "BM25": {
+        "R@3": 79.9,
+        "R@5": 84.69
+      },
+      "T5 (MS MARCO)": {
+        "R@3": 86.12,
+        "R@5": 89.95
+      }
+    },
+    "gold_rationale_label_f1_table_8": {
+      "RoBERTa-large (VeriSci label model)": {
+        "SUPPORTS": 86.49,
+        "NOINFO": 82.87,
+        "REFUTES": 71.21
+      },
+      "T5": {
+        "SUPPORTS": 90.71,
+        "NOINFO": 88.89,
+        "REFUTES": 84.89
+      }
+    },
+    "abstract_level_f1_table_9": {
+      "label_only": {
+        "Oracle abstracts, VeriSci": 77.47,
+        "Oracle abstracts, VerT5erini": 85.27,
+        "VeriSci full pipeline": 51.03,
+        "VerT5erini (BM25)": 65.98,
+        "VerT5erini (T5)": 65.07
+      },
+      "label_rationale": {
+        "Oracle abstracts, VeriSci": 72.53,
+        "Oracle abstracts, VerT5erini": 81.65,
+        "VeriSci full pipeline": 48.45,
+        "VerT5erini (BM25)": 62.4,
+        "VerT5erini (T5)": 61.72
+      }
+    },
+    "sentence_level_f1_table_10": {
+      "selection_only": {
+        "Oracle abstracts, VeriSci": 67.71,
+        "Oracle abstracts, VerT5erini": 77.42,
+        "VeriSci full pipeline": 47.69,
+        "VerT5erini (BM25)": 59.97,
+        "VerT5erini (T5)": 60.87
+      },
+      "selection_label": {
+        "Oracle abstracts, VeriSci": 60.82,
+        "Oracle abstracts, VerT5erini": 72.43,
+        "VeriSci full pipeline": 42.62,
+        "VerT5erini (BM25)": 56.62,
+        "VerT5erini (T5)": 57.1
+      }
+    },
+    "gold_rationale_macro_f1_derived": {
+      "RoBERTa-large (VeriSci label model)": 80.19,
+      "T5": 88.16
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "note": "Relevance comes from BEIR qrels, which list every cited abstract, including abstracts that contain no evidence for the claim. evidence_micro_recall is pooled over abstracts with annotated evidence, the definition behind VerT5erini Table 6.",
+  "oracle_check_micro_recall@3": 1.0,
+  "config": {
+    "k1": 0.6,
+    "b": 0.6,
+    "stem": true,
+    "remove_stopwords": false,
+    "encoder": "bge-base",
+    "rrf_k": 3,
+    "dense_weight": 5.0,
+    "fusion_depth": 100,
+    "rerank_depth": 20,
+    "reranker": "finetuned",
+    "final_fusion_k": 3,
+    "final_fusion_weight": 1.0
+  },
+  "n_claims": 121,
+  "runs": {
+    "bm25": {
+      "mrr@10": 0.6299685163321528,
+      "ndcg@10": 0.6544985090257267,
+      "ndcg@100": 0.6809712546035173,
+      "ndcg@3": 0.6136855359776576,
+      "ndcg@5": 0.6293807992271491,
+      "recall@10": 0.7589531680440771,
+      "recall@100": 0.8815426997245179,
+      "recall@3": 0.6487603305785123,
+      "recall@5": 0.6859504132231405,
+      "evidence_micro_recall@3": 0.8205128205128205,
+      "evidence_micro_recall@5": 0.8717948717948718
+    },
+    "dense": {
+      "mrr@10": 0.7232880755608028,
+      "ndcg@10": 0.7549901110482042,
+      "ndcg@100": 0.7713675791122837,
+      "ndcg@3": 0.7161052819339746,
+      "ndcg@5": 0.7351377860782604,
+      "recall@10": 0.8760330578512396,
+      "recall@100": 0.9476584022038568,
+      "recall@3": 0.7727272727272727,
+      "recall@5": 0.8181818181818182,
+      "evidence_micro_recall@3": 0.9102564102564102,
+      "evidence_micro_recall@5": 0.9230769230769231
+    },
+    "rrf": {
+      "mrr@10": 0.7287977174340811,
+      "ndcg@10": 0.7591158855309162,
+      "ndcg@100": 0.7776327692567129,
+      "ndcg@3": 0.7191554492598303,
+      "ndcg@5": 0.7433462625229381,
+      "recall@10": 0.8760330578512396,
+      "recall@100": 0.9559228650137741,
+      "recall@3": 0.7727272727272727,
+      "recall@5": 0.8305785123966942,
+      "evidence_micro_recall@3": 0.9102564102564102,
+      "evidence_micro_recall@5": 0.9230769230769231
+    },
+    "rrf+stock_cross_encoder": {
+      "mrr@10": 0.6504099435917616,
+      "ndcg@10": 0.6922643775578277,
+      "ndcg@100": 0.7225018129418235,
+      "ndcg@3": 0.6572433301951873,
+      "ndcg@5": 0.6729385934446789,
+      "recall@10": 0.8305785123966942,
+      "recall@100": 0.9559228650137741,
+      "recall@3": 0.7355371900826446,
+      "recall@5": 0.7727272727272727,
+      "evidence_micro_recall@3": 0.8974358974358975,
+      "evidence_micro_recall@5": 0.9230769230769231
+    },
+    "rrf+finetuned_cross_encoder": {
+      "mrr@10": 0.7239407057588877,
+      "ndcg@10": 0.7477032206570559,
+      "ndcg@100": 0.7726817232378822,
+      "ndcg@3": 0.7150921846109086,
+      "ndcg@5": 0.7282428869231153,
+      "recall@10": 0.849862258953168,
+      "recall@100": 0.9559228650137741,
+      "recall@3": 0.7589531680440771,
+      "recall@5": 0.7920110192837465,
+      "evidence_micro_recall@3": 0.9358974358974359,
+      "evidence_micro_recall@5": 0.9358974358974359
+    },
+    "full": {
+      "mrr@10": 0.7447494424767153,
+      "ndcg@10": 0.7703735120611322,
+      "ndcg@100": 0.7893569785266128,
+      "ndcg@3": 0.7296819419413931,
+      "ndcg@5": 0.7507272509230747,
+      "recall@10": 0.8746556473829201,
+      "recall@100": 0.9559228650137741,
+      "recall@3": 0.7644628099173554,
+      "recall@5": 0.8168044077134986,
+      "evidence_micro_recall@3": 0.9358974358974359,
+      "evidence_micro_recall@5": 0.9358974358974359
+    }
+  },
+  "paired_ndcg@10": {
+    "rrf_minus_bm25": {
+      "mean": 0.1046173765051895,
+      "ci95_low": 0.04856347848770986,
+      "ci95_high": 0.16231489133770988
+    },
+    "rrf_minus_dense": {
+      "mean": 0.004125774482712001,
+      "ci95_low": -0.00123768993865114,
+      "ci95_high": 0.012196228826626956
+    },
+    "full_minus_bm25": {
+      "mean": 0.11587500303540518,
+      "ci95_low": 0.06960369839687389,
+      "ci95_high": 0.1632210051652865
+    },
+    "full_minus_dense": {
+      "mean": 0.015383401012927664,
+      "ci95_low": -0.014488019829838793,
+      "ci95_high": 0.04658708275475509
+    },
+    "full_minus_rrf": {
+      "mean": 0.011257626530215663,
+      "ci95_low": -0.01759387111152924,
+      "ci95_high": 0.04136192751010137
+    },
+    "full_minus_rrf+finetuned_cross_encoder": {
+      "mean": 0.022670291404076327,
+      "ci95_low": 0.003272993504831467,
+      "ci95_high": 0.04361294651098054
+    }
+  }
+}

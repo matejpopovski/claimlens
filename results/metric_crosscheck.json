@@ -1,0 +1,23 @@
+{
+  "official_scifact_evaluator": {
+    "trials": 200,
+    "n_claims": 566,
+    "largest_absolute_difference": 0.0
+  },
+  "pytrec_eval": {
+    "n_queries": 121,
+    "ours": {
+      "ndcg@10": 0.6544985090257267,
+      "ndcg@100": 0.6809712546035173,
+      "recall@10": 0.7589531680440771,
+      "recall@100": 0.8815426997245179
+    },
+    "pytrec_eval": {
+      "ndcg@10": 0.6544985090257269,
+      "ndcg@100": 0.6809712546035176,
+      "recall@10": 0.7589531680440771,
+      "recall@100": 0.8815426997245179
+    },
+    "largest_absolute_difference": 3.3306690738754696e-16
+  }
+}

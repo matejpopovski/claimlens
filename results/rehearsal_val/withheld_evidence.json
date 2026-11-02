@@ -1,0 +1,13 @@
+{
+  "n_claims": 75,
+  "decisive_without_abstention": 42,
+  "decisive_rate_without_abstention": 0.56,
+  "decisive_with_abstention": 4,
+  "decisive_rate_with_abstention": 0.05333333333333334,
+  "answered_not_enough_info": 10,
+  "abstained": 61,
+  "abstention_reasons": {
+    "low_confidence": 45,
+    "weak_retrieval": 32
+  }
+}

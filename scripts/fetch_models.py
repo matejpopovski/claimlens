@@ -33,9 +33,8 @@ def main() -> None:
     args = parser.parse_args()
 
     api = HfApi()
-    records = {}
-    if args.provenance.exists():
-        records = json.loads(args.provenance.read_text())["models"]
+    provenance = json.loads(args.provenance.read_text()) if args.provenance.exists() else {}
+    records = provenance.setdefault("models", {})
     for key in args.only:
         spec = MODELS[key]
         snapshot_download(
@@ -57,7 +56,7 @@ def main() -> None:
         print(f"{key}: {spec.repo} at {spec.revision[:8]} ({licence})")
 
     args.provenance.parent.mkdir(exist_ok=True)
-    args.provenance.write_text(json.dumps({"models": records}, indent=2, sort_keys=True) + "\n")
+    args.provenance.write_text(json.dumps(provenance, indent=2, sort_keys=True) + "\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,49 @@
+{
+  "datasets": {
+    "beir_scifact": {
+      "note": "Same corpus text and claim ids as SciFact, repackaged with qrels listing all cited abstracts.",
+      "sha256": "536e14446a0ba56ed1398ab1055f39fe852686ecad24a6306c80c490fa8e0165",
+      "source": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scifact.zip"
+    },
+    "scifact": {
+      "abstracts_licence": "ODC-By 1.0 (S2ORC)",
+      "claims_and_annotations_licence": "CC BY 4.0",
+      "licence_source": "https://github.com/allenai/scifact/blob/master/LICENSE.md",
+      "note": "The BEIR paper (arXiv:2104.08663, Appendix E) lists SciFact as CC BY-NC 2.0. The dataset's own LICENSE.md, read at the source, says otherwise and takes precedence.",
+      "sha256": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+      "source": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz"
+    }
+  },
+  "models": {
+    "bge-base": {
+      "licence_from_model_card": "mit",
+      "repo": "BAAI/bge-base-en-v1.5",
+      "revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+      "role": "dense retrieval candidate"
+    },
+    "bge-small": {
+      "licence_from_model_card": "mit",
+      "repo": "BAAI/bge-small-en-v1.5",
+      "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "role": "dense retrieval candidate"
+    },
+    "deberta-nli": {
+      "licence_from_model_card": "mit",
+      "repo": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+      "revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+      "role": "NLI model, starting point for fine-tuning"
+    },
+    "minilm": {
+      "licence_from_model_card": "apache-2.0",
+      "repo": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "role": "dense retrieval candidate"
+    },
+    "ms-marco-minilm": {
+      "licence_from_model_card": "apache-2.0",
+      "repo": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "role": "cross-encoder reranker, starting point for fine-tuning"
+    }
+  }
+}

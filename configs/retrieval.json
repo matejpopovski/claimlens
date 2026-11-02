@@ -1,0 +1,14 @@
+{
+  "k1": 0.6,
+  "b": 0.6,
+  "stem": true,
+  "remove_stopwords": false,
+  "encoder": "bge-base",
+  "rrf_k": 3,
+  "dense_weight": 5.0,
+  "fusion_depth": 100,
+  "rerank_depth": 20,
+  "reranker": "finetuned",
+  "final_fusion_k": 3,
+  "final_fusion_weight": 1.0
+}

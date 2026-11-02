@@ -1,0 +1,35 @@
+{
+  "base_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "device": "mps",
+  "selection_split": "val",
+  "selection_metric": "macro-F1 over validation premise/claim examples",
+  "training_examples": {
+    "SUPPORTS": 896,
+    "REFUTES": 502,
+    "NOT_ENOUGH_INFO": 1398
+  },
+  "validation_examples": 504,
+  "epochs": 3,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "nei_per_decisive": 1.0,
+  "best_score": 0.7325412852314382,
+  "history": [
+    {
+      "epoch": 1,
+      "step": 175,
+      "score": 0.711950146627566
+    },
+    {
+      "epoch": 2,
+      "step": 350,
+      "score": 0.7325412852314382
+    },
+    {
+      "epoch": 3,
+      "step": 525,
+      "score": 0.7222508730062426
+    }
+  ],
+  "steps": 525
+}

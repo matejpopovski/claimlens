@@ -1,0 +1,21 @@
+{
+  "note": "Stage-by-stage diagnosis on the validation split of the first design, where one fine-tuned NLI model both selected rationales and judged them. These measurements motivated the two-model design and describe no shipped configuration.",
+  "split": "val",
+  "evidence_micro_recall@3": 0.9358974358974359,
+  "finetuned": {
+    "gold_rationale_in_top1": 0.6923076923076923,
+    "gold_rationale_in_top3": 0.8974358974358975,
+    "n_evidence_abstracts": 78,
+    "gold_rationale_decisive_accuracy": 0.5384615384615384,
+    "gold_rationale_predicted_nei": 31,
+    "gold_rationale_predicted_nei_fraction": 0.3974358974358974
+  },
+  "stock": {
+    "gold_rationale_in_top1": 0.5769230769230769,
+    "gold_rationale_in_top3": 0.8461538461538461,
+    "n_evidence_abstracts": 78,
+    "gold_rationale_decisive_accuracy": 0.5384615384615384,
+    "gold_rationale_predicted_nei": 29,
+    "gold_rationale_predicted_nei_fraction": 0.3717948717948718
+  }
+}

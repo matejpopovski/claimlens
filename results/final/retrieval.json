@@ -1,0 +1,131 @@
+{
+  "note": "Relevance comes from BEIR qrels, which list every cited abstract, including abstracts that contain no evidence for the claim. evidence_micro_recall is pooled over abstracts with annotated evidence, the definition behind VerT5erini Table 6.",
+  "oracle_check_micro_recall@3": 0.9760765550239234,
+  "config": {
+    "k1": 0.6,
+    "b": 0.6,
+    "stem": true,
+    "remove_stopwords": false,
+    "encoder": "bge-base",
+    "rrf_k": 3,
+    "dense_weight": 5.0,
+    "fusion_depth": 100,
+    "rerank_depth": 20,
+    "reranker": "finetuned",
+    "final_fusion_k": 3,
+    "final_fusion_weight": 1.0
+  },
+  "n_claims": 300,
+  "runs": {
+    "bm25": {
+      "mrr@10": 0.6414351851851852,
+      "ndcg@10": 0.6710289773197136,
+      "ndcg@100": 0.6978666600724619,
+      "ndcg@3": 0.6325451871467226,
+      "ndcg@5": 0.6490312789300072,
+      "recall@10": 0.7817777777777778,
+      "recall@100": 0.8981666666666668,
+      "recall@3": 0.6784444444444443,
+      "recall@5": 0.7192777777777777,
+      "evidence_micro_recall@3": 0.7751196172248804,
+      "evidence_micro_recall@5": 0.8181818181818182
+    },
+    "dense": {
+      "mrr@10": 0.7039325396825397,
+      "ndcg@10": 0.7411415270561111,
+      "ndcg@100": 0.7617877372111931,
+      "ndcg@3": 0.690752775367827,
+      "ndcg@5": 0.719559808835359,
+      "recall@10": 0.8758888888888888,
+      "recall@100": 0.97,
+      "recall@3": 0.7436666666666667,
+      "recall@5": 0.8137222222222221,
+      "evidence_micro_recall@3": 0.84688995215311,
+      "evidence_micro_recall@5": 0.9282296650717703
+    },
+    "rrf": {
+      "mrr@10": 0.70980291005291,
+      "ndcg@10": 0.7486473808897509,
+      "ndcg@100": 0.7690901054605437,
+      "ndcg@3": 0.6947506515581506,
+      "ndcg@5": 0.7262827829100424,
+      "recall@10": 0.8875555555555555,
+      "recall@100": 0.9793333333333334,
+      "recall@3": 0.7453333333333333,
+      "recall@5": 0.8220555555555555,
+      "evidence_micro_recall@3": 0.8516746411483254,
+      "evidence_micro_recall@5": 0.937799043062201
+    },
+    "rrf+stock_cross_encoder": {
+      "mrr@10": 0.6727645502645502,
+      "ndcg@10": 0.7147695064061057,
+      "ndcg@100": 0.7396721216690674,
+      "ndcg@3": 0.6532994627514248,
+      "ndcg@5": 0.6832570401142527,
+      "recall@10": 0.8735555555555555,
+      "recall@100": 0.9793333333333334,
+      "recall@3": 0.709111111111111,
+      "recall@5": 0.7802777777777777,
+      "evidence_micro_recall@3": 0.8421052631578947,
+      "evidence_micro_recall@5": 0.8995215311004785
+    },
+    "rrf+finetuned_cross_encoder": {
+      "mrr@10": 0.7324060846560846,
+      "ndcg@10": 0.7717549817133958,
+      "ndcg@100": 0.7886259020893331,
+      "ndcg@3": 0.7267838061672766,
+      "ndcg@5": 0.7536412287917548,
+      "recall@10": 0.9046666666666666,
+      "recall@100": 0.9793333333333334,
+      "recall@3": 0.7850555555555555,
+      "recall@5": 0.8515555555555555,
+      "evidence_micro_recall@3": 0.8995215311004785,
+      "evidence_micro_recall@5": 0.9425837320574163
+    },
+    "full": {
+      "mrr@10": 0.7336587301587301,
+      "ndcg@10": 0.771529603693206,
+      "ndcg@100": 0.7896425701096904,
+      "ndcg@3": 0.7349562937578122,
+      "ndcg@5": 0.7546453341129077,
+      "recall@10": 0.8992222222222221,
+      "recall@100": 0.9793333333333334,
+      "recall@3": 0.8022777777777778,
+      "recall@5": 0.8522222222222222,
+      "evidence_micro_recall@3": 0.9090909090909091,
+      "evidence_micro_recall@5": 0.9521531100478469
+    }
+  },
+  "paired_ndcg@10": {
+    "rrf_minus_bm25": {
+      "mean": 0.07761840357003741,
+      "ci95_low": 0.03954671298066443,
+      "ci95_high": 0.11578597388708327
+    },
+    "rrf_minus_dense": {
+      "mean": 0.00750585383364001,
+      "ci95_low": 0.003119826600596493,
+      "ci95_high": 0.012626622001555229
+    },
+    "full_minus_bm25": {
+      "mean": 0.10050062637349233,
+      "ci95_low": 0.06608034439995009,
+      "ci95_high": 0.13414690154505346
+    },
+    "full_minus_dense": {
+      "mean": 0.030388076637094936,
+      "ci95_low": 0.010639008135003075,
+      "ci95_high": 0.05001893805674329
+    },
+    "full_minus_rrf": {
+      "mean": 0.022882222803454918,
+      "ci95_low": 0.003902056022970359,
+      "ci95_high": 0.04146917764677032
+    },
+    "full_minus_rrf+finetuned_cross_encoder": {
+      "mean": -0.00022537802019013286,
+      "ci95_low": -0.016382992441345893,
+      "ci95_high": 0.01460505545032386
+    }
+  }
+}

@@ -1,0 +1,1311 @@
+{
+  "split": "val",
+  "n_claims": 121,
+  "best": {
+    "rationale_threshold": 0.7,
+    "top_k": 3,
+    "nei_bias": 1.0,
+    "claim_macro_f1": 0.660426731078905,
+    "claim_accuracy": 0.6776859504132231,
+    "abstract_label_only_f1": 0.47674418604651164,
+    "sentence_selection_label_f1": 0.3404255319148936
+  },
+  "grid": [
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6297493078469298,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5303030303030304,
+      "sentence_selection_label_f1": 0.3559322033898305
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6293349690555535,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5303030303030304,
+      "sentence_selection_label_f1": 0.3559322033898305
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.616540807323175,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.5303030303030304,
+      "sentence_selection_label_f1": 0.3559322033898305
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6166921959074664,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.5384615384615384,
+      "sentence_selection_label_f1": 0.3605150214592274
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6093220338983051,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5196850393700787,
+      "sentence_selection_label_f1": 0.34210526315789475
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.5805526397492571,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.4838709677419355,
+      "sentence_selection_label_f1": 0.33333333333333337
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5782857142857143,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.4666666666666667,
+      "sentence_selection_label_f1": 0.3211009174311927
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5327545425223094,
+      "claim_accuracy": 0.5702479338842975,
+      "abstract_label_only_f1": 0.43859649122807026,
+      "sentence_selection_label_f1": 0.3106796116504854
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 1,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.48239587676207396,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.36893203883495146,
+      "sentence_selection_label_f1": 0.27173913043478265
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5575451686050764,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.5068493150684932,
+      "sentence_selection_label_f1": 0.35658914728682173
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.5574024481587506,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.5068493150684932,
+      "sentence_selection_label_f1": 0.35658914728682173
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.5658031899829474,
+      "claim_accuracy": 0.5950413223140496,
+      "abstract_label_only_f1": 0.5068493150684932,
+      "sentence_selection_label_f1": 0.35658914728682173
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.5796704094435962,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.5138888888888888,
+      "sentence_selection_label_f1": 0.35937499999999994
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.5861033302209774,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.5106382978723405,
+      "sentence_selection_label_f1": 0.350597609561753
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.5574567042875058,
+      "claim_accuracy": 0.5950413223140496,
+      "abstract_label_only_f1": 0.47826086956521735,
+      "sentence_selection_label_f1": 0.34285714285714286
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5552911862419386,
+      "claim_accuracy": 0.5950413223140496,
+      "abstract_label_only_f1": 0.4626865671641791,
+      "sentence_selection_label_f1": 0.3319502074688797
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5304126984126983,
+      "claim_accuracy": 0.5702479338842975,
+      "abstract_label_only_f1": 0.42519685039370075,
+      "sentence_selection_label_f1": 0.31718061674008813
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 2,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.4966438546333191,
+      "claim_accuracy": 0.5537190082644629,
+      "abstract_label_only_f1": 0.3716814159292035,
+      "sentence_selection_label_f1": 0.27860696517412936
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5707734945830184,
+      "claim_accuracy": 0.5867768595041323,
+      "abstract_label_only_f1": 0.46625766871165647,
+      "sentence_selection_label_f1": 0.3380281690140845
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.5714237788513151,
+      "claim_accuracy": 0.5867768595041323,
+      "abstract_label_only_f1": 0.46625766871165647,
+      "sentence_selection_label_f1": 0.3380281690140845
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.5868889405368097,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.46625766871165647,
+      "sentence_selection_label_f1": 0.3380281690140845
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.5949423247559893,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.47500000000000003,
+      "sentence_selection_label_f1": 0.3416370106761566
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6161688270483245,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.47741935483870973,
+      "sentence_selection_label_f1": 0.3357664233576642
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.5770307253525188,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.45033112582781454,
+      "sentence_selection_label_f1": 0.3308270676691729
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5628852797207066,
+      "claim_accuracy": 0.5950413223140496,
+      "abstract_label_only_f1": 0.4383561643835616,
+      "sentence_selection_label_f1": 0.3218390804597701
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5309728634536818,
+      "claim_accuracy": 0.5619834710743802,
+      "abstract_label_only_f1": 0.42028985507246375,
+      "sentence_selection_label_f1": 0.31967213114754095
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 3,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.49053024369698167,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.36065573770491804,
+      "sentence_selection_label_f1": 0.27906976744186046
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5824123588829472,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.40860215053763443,
+      "sentence_selection_label_f1": 0.294478527607362
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.5901492474828878,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.40860215053763443,
+      "sentence_selection_label_f1": 0.294478527607362
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6134125272702052,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.40860215053763443,
+      "sentence_selection_label_f1": 0.294478527607362
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6079415721157572,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.42458100558659223,
+      "sentence_selection_label_f1": 0.3018867924528302
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6294631294631294,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.42528735632183906,
+      "sentence_selection_label_f1": 0.2958199356913183
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.5955211740477303,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.39999999999999997,
+      "sentence_selection_label_f1": 0.29042904290429045
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5819764943014243,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.3878787878787879,
+      "sentence_selection_label_f1": 0.28187919463087246
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5506557618626584,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.3766233766233767,
+      "sentence_selection_label_f1": 0.2815884476534296
+    },
+    {
+      "rationale_threshold": 0.3,
+      "top_k": 5,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.49053024369698167,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.3410852713178295,
+      "sentence_selection_label_f1": 0.2654867256637168
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6421493673922168,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5413533834586467,
+      "sentence_selection_label_f1": 0.37068965517241376
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6417155106914144,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5413533834586467,
+      "sentence_selection_label_f1": 0.37068965517241376
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6293349690555535,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5413533834586467,
+      "sentence_selection_label_f1": 0.37068965517241376
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6369332659611127,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5454545454545455,
+      "sentence_selection_label_f1": 0.3722943722943723
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6298850574712643,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5271317829457364,
+      "sentence_selection_label_f1": 0.3539823008849557
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.594017094017094,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.496,
+      "sentence_selection_label_f1": 0.34703196347031967
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5782857142857143,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.4833333333333334,
+      "sentence_selection_label_f1": 0.3364485981308411
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5470003259079178,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.4521739130434782,
+      "sentence_selection_label_f1": 0.3235294117647059
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 1,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.487001287001287,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.38095238095238093,
+      "sentence_selection_label_f1": 0.28108108108108104
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5837294266594321,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.513157894736842,
+      "sentence_selection_label_f1": 0.3706563706563707
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.583807972195069,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.513157894736842,
+      "sentence_selection_label_f1": 0.3706563706563707
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.592948717948718,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.513157894736842,
+      "sentence_selection_label_f1": 0.3706563706563707
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6071625642575443,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.52,
+      "sentence_selection_label_f1": 0.3735408560311284
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6140584142179675,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.5170068027210885,
+      "sentence_selection_label_f1": 0.3650793650793651
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.5861033302209774,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.48611111111111116,
+      "sentence_selection_label_f1": 0.3577235772357723
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5769662436329103,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.463768115942029,
+      "sentence_selection_label_f1": 0.3416666666666667
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5545988627482685,
+      "claim_accuracy": 0.5867768595041323,
+      "abstract_label_only_f1": 0.4307692307692308,
+      "sentence_selection_label_f1": 0.3288888888888889
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 2,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.5025623640421505,
+      "claim_accuracy": 0.5537190082644629,
+      "abstract_label_only_f1": 0.3826086956521739,
+      "sentence_selection_label_f1": 0.2885572139303483
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5955973528387322,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.4651162790697675,
+      "sentence_selection_label_f1": 0.3460207612456747
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6031986531986533,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.4651162790697675,
+      "sentence_selection_label_f1": 0.3460207612456747
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6189706945720691,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.4651162790697675,
+      "sentence_selection_label_f1": 0.3460207612456747
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6205948431898695,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.47619047619047616,
+      "sentence_selection_label_f1": 0.3508771929824562
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6424501424501424,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.4785276073619632,
+      "sentence_selection_label_f1": 0.34532374100719426
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.604055944055944,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.4528301886792453,
+      "sentence_selection_label_f1": 0.34074074074074073
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5833694083694084,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.4342105263157895,
+      "sentence_selection_label_f1": 0.3269961977186312
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5535967348789751,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.4195804195804196,
+      "sentence_selection_label_f1": 0.32653061224489793
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 3,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.49597069597069593,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.368,
+      "sentence_selection_label_f1": 0.2857142857142857
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5821023344417894,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.39,
+      "sentence_selection_label_f1": 0.29268292682926833
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.5831059156335802,
+      "claim_accuracy": 0.6033057851239669,
+      "abstract_label_only_f1": 0.39,
+      "sentence_selection_label_f1": 0.29268292682926833
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6062289562289563,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.39,
+      "sentence_selection_label_f1": 0.29268292682926833
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6070781706520538,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.4,
+      "sentence_selection_label_f1": 0.2972136222910217
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6290238046933117,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.4,
+      "sentence_selection_label_f1": 0.29113924050632906
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6025826025826025,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.3743315508021391,
+      "sentence_selection_label_f1": 0.2838709677419355
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5969236534344816,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.37078651685393255,
+      "sentence_selection_label_f1": 0.27906976744186046
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5506557618626584,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.36024844720496896,
+      "sentence_selection_label_f1": 0.2783882783882784
+    },
+    {
+      "rationale_threshold": 0.5,
+      "top_k": 5,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.4850569944604323,
+      "claim_accuracy": 0.5289256198347108,
+      "abstract_label_only_f1": 0.3235294117647059,
+      "sentence_selection_label_f1": 0.2510822510822511
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6529042580269809,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5467625899280575,
+      "sentence_selection_label_f1": 0.3675213675213675
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6527859879584018,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5467625899280575,
+      "sentence_selection_label_f1": 0.3675213675213675
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6408337353592489,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5467625899280575,
+      "sentence_selection_label_f1": 0.3675213675213675
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6486330432914384,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5507246376811593,
+      "sentence_selection_label_f1": 0.3690987124463519
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6421279351185529,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5454545454545455,
+      "sentence_selection_label_f1": 0.35555555555555557
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6147369424777706,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5196850393700787,
+      "sentence_selection_label_f1": 0.3502304147465438
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5999392980465913,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.5081967213114754,
+      "sentence_selection_label_f1": 0.33962264150943394
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5470003259079178,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.4521739130434782,
+      "sentence_selection_label_f1": 0.32160804020100503
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 1,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.487001287001287,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.38095238095238093,
+      "sentence_selection_label_f1": 0.27777777777777785
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6004710638261885,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.5157232704402517,
+      "sentence_selection_label_f1": 0.36923076923076925
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6008493735341968,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.5157232704402517,
+      "sentence_selection_label_f1": 0.36923076923076925
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6107432220199908,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5157232704402517,
+      "sentence_selection_label_f1": 0.36923076923076925
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6252173913043478,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5222929936305732,
+      "sentence_selection_label_f1": 0.372093023255814
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6254586683158112,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5263157894736842,
+      "sentence_selection_label_f1": 0.3665338645418327
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6054985345008905,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5,
+      "sentence_selection_label_f1": 0.36065573770491804
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.5965904510303685,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.47887323943661975,
+      "sentence_selection_label_f1": 0.3445378151260504
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5526995784033727,
+      "claim_accuracy": 0.5867768595041323,
+      "abstract_label_only_f1": 0.4274809160305344,
+      "sentence_selection_label_f1": 0.3287671232876712
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 2,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.5005851456208367,
+      "claim_accuracy": 0.5537190082644629,
+      "abstract_label_only_f1": 0.37931034482758624,
+      "sentence_selection_label_f1": 0.2857142857142857
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6115359269896925,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.46153846153846156,
+      "sentence_selection_label_f1": 0.34013605442176875
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6194115652166721,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.46153846153846156,
+      "sentence_selection_label_f1": 0.34013605442176875
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.63562569213732,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.46153846153846156,
+      "sentence_selection_label_f1": 0.34013605442176875
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6377173799854212,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.4719101123595505,
+      "sentence_selection_label_f1": 0.3448275862068966
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.660426731078905,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.47674418604651164,
+      "sentence_selection_label_f1": 0.3404255319148936
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6305873724627364,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.4550898203592814,
+      "sentence_selection_label_f1": 0.336996336996337
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.6034250737331971,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.440251572327044,
+      "sentence_selection_label_f1": 0.3245283018867925
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5535967348789751,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.4109589041095891,
+      "sentence_selection_label_f1": 0.32231404958677684
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 3,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.49597069597069593,
+      "claim_accuracy": 0.5371900826446281,
+      "abstract_label_only_f1": 0.359375,
+      "sentence_selection_label_f1": 0.27906976744186046
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.5920226143709338,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.38139534883720927,
+      "sentence_selection_label_f1": 0.28486646884273
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6000221043324492,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.38139534883720927,
+      "sentence_selection_label_f1": 0.28486646884273
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6239364060991127,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.38139534883720927,
+      "sentence_selection_label_f1": 0.28486646884273
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6245791245791247,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.3923444976076555,
+      "sentence_selection_label_f1": 0.29003021148036257
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6402986626734052,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.39408866995073893,
+      "sentence_selection_label_f1": 0.2848297213622291
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6218366696830538,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.37185929648241206,
+      "sentence_selection_label_f1": 0.2784810126582279
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.6168764568764569,
+      "claim_accuracy": 0.6446280991735537,
+      "abstract_label_only_f1": 0.368421052631579,
+      "sentence_selection_label_f1": 0.2736156351791531
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5506557618626584,
+      "claim_accuracy": 0.5785123966942148,
+      "abstract_label_only_f1": 0.3473053892215569,
+      "sentence_selection_label_f1": 0.2710622710622711
+    },
+    {
+      "rationale_threshold": 0.7,
+      "top_k": 5,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.4850569944604323,
+      "claim_accuracy": 0.5289256198347108,
+      "abstract_label_only_f1": 0.3142857142857143,
+      "sentence_selection_label_f1": 0.24347826086956523
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6597101449275363,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.5633802816901409,
+      "sentence_selection_label_f1": 0.37333333333333335
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6598692810457517,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.5633802816901409,
+      "sentence_selection_label_f1": 0.37333333333333335
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6478524095722432,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5633802816901409,
+      "sentence_selection_label_f1": 0.37333333333333335
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6557692307692308,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.5673758865248226,
+      "sentence_selection_label_f1": 0.375
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6571231427806201,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.5735294117647058,
+      "sentence_selection_label_f1": 0.37442922374429227
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.644627633340379,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.564885496183206,
+      "sentence_selection_label_f1": 0.3791469194312796
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.6232852516926699,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5439999999999999,
+      "sentence_selection_label_f1": 0.3627450980392157
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5640000278427442,
+      "claim_accuracy": 0.5950413223140496,
+      "abstract_label_only_f1": 0.47863247863247865,
+      "sentence_selection_label_f1": 0.34554973821989526
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 1,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.49658946061823767,
+      "claim_accuracy": 0.5454545454545454,
+      "abstract_label_only_f1": 0.39622641509433965,
+      "sentence_selection_label_f1": 0.2873563218390805
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6175084175084176,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5180722891566266,
+      "sentence_selection_label_f1": 0.3686274509803922
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6181887604568016,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.5180722891566266,
+      "sentence_selection_label_f1": 0.3686274509803922
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6290688584166156,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.5180722891566266,
+      "sentence_selection_label_f1": 0.3686274509803922
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6439125295508275,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.524390243902439,
+      "sentence_selection_label_f1": 0.3715415019762846
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6447553109957201,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5341614906832298,
+      "sentence_selection_label_f1": 0.376
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6397845438067352,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.5256410256410257,
+      "sentence_selection_label_f1": 0.38016528925619836
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.632213608957795,
+      "claim_accuracy": 0.6611570247933884,
+      "abstract_label_only_f1": 0.5066666666666667,
+      "sentence_selection_label_f1": 0.3659574468085106
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5904513704215865,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.4558823529411764,
+      "sentence_selection_label_f1": 0.3551401869158879
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 2,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.5246031746031746,
+      "claim_accuracy": 0.5702479338842975,
+      "abstract_label_only_f1": 0.38983050847457623,
+      "sentence_selection_label_f1": 0.2931937172774869
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6094268579482284,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.46073298429319376,
+      "sentence_selection_label_f1": 0.3391003460207613
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6174958909832506,
+      "claim_accuracy": 0.6363636363636364,
+      "abstract_label_only_f1": 0.46073298429319376,
+      "sentence_selection_label_f1": 0.3391003460207613
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6339487332191865,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.46073298429319376,
+      "sentence_selection_label_f1": 0.3391003460207613
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6363636363636364,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.4705882352941177,
+      "sentence_selection_label_f1": 0.34385964912280703
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.6593162748769156,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.4808743169398907,
+      "sentence_selection_label_f1": 0.3487544483985765
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6559393386082369,
+      "claim_accuracy": 0.6776859504132231,
+      "abstract_label_only_f1": 0.4719101123595505,
+      "sentence_selection_label_f1": 0.3516483516483517
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.6302170765334671,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.4588235294117647,
+      "sentence_selection_label_f1": 0.3409090909090909
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.5976535890382441,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.4387096774193549,
+      "sentence_selection_label_f1": 0.3388429752066116
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 3,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.5276692642101908,
+      "claim_accuracy": 0.5619834710743802,
+      "abstract_label_only_f1": 0.373134328358209,
+      "sentence_selection_label_f1": 0.27906976744186046
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": -1.0,
+      "claim_macro_f1": 0.6007215007215008,
+      "claim_accuracy": 0.6198347107438017,
+      "abstract_label_only_f1": 0.3805309734513274,
+      "sentence_selection_label_f1": 0.28834355828220865
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": -0.5,
+      "claim_macro_f1": 0.6089743589743589,
+      "claim_accuracy": 0.628099173553719,
+      "abstract_label_only_f1": 0.3805309734513274,
+      "sentence_selection_label_f1": 0.28834355828220865
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 0.0,
+      "claim_macro_f1": 0.6335438130054282,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.3805309734513274,
+      "sentence_selection_label_f1": 0.28834355828220865
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 0.5,
+      "claim_macro_f1": 0.6344458786649456,
+      "claim_accuracy": 0.6528925619834711,
+      "abstract_label_only_f1": 0.3909090909090909,
+      "sentence_selection_label_f1": 0.29374999999999996
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 1.0,
+      "claim_macro_f1": 0.650703889874499,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.39814814814814814,
+      "sentence_selection_label_f1": 0.2974683544303798
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 1.5,
+      "claim_macro_f1": 0.6473908612549656,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.3886255924170616,
+      "sentence_selection_label_f1": 0.2987012987012987
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 2.0,
+      "claim_macro_f1": 0.6435231435231435,
+      "claim_accuracy": 0.6694214876033058,
+      "abstract_label_only_f1": 0.3842364532019704,
+      "sentence_selection_label_f1": 0.294314381270903
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 3.0,
+      "claim_macro_f1": 0.586986646510456,
+      "claim_accuracy": 0.6115702479338843,
+      "abstract_label_only_f1": 0.375,
+      "sentence_selection_label_f1": 0.2954545454545454
+    },
+    {
+      "rationale_threshold": 0.9,
+      "top_k": 5,
+      "nei_bias": 4.0,
+      "claim_macro_f1": 0.51697299041205,
+      "claim_accuracy": 0.5537190082644629,
+      "abstract_label_only_f1": 0.32,
+      "sentence_selection_label_f1": 0.24137931034482757
+    }
+  ]
+}

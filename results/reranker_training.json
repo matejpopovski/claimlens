@@ -1,0 +1,26 @@
+{
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "selection_split": "val",
+  "selection_metric": "ndcg@10 reranking the top 50 fused abstracts",
+  "pairs": 5186,
+  "positives": 658,
+  "best_score": 0.741997187997071,
+  "history": [
+    {
+      "epoch": 1,
+      "step": 325,
+      "score": 0.7315932913527632
+    },
+    {
+      "epoch": 2,
+      "step": 650,
+      "score": 0.7380171164090047
+    },
+    {
+      "epoch": 3,
+      "step": 975,
+      "score": 0.741997187997071
+    }
+  ],
+  "steps": 975
+}

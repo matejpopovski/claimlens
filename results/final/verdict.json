@@ -1,0 +1,212 @@
+{
+  "n_claims": 300,
+  "gold_distribution": {
+    "SUPPORTS": 124,
+    "REFUTES": 64,
+    "NOT_ENOUGH_INFO": 112
+  },
+  "note": "Claim-level macro-F1 covers SUPPORTS, REFUTES and NOT_ENOUGH_INFO with every claim answered. official_scifact uses the leaderboard evaluator's definitions.",
+  "finetuned": {
+    "claim_level": {
+      "macro_f1": 0.7196483673150534,
+      "accuracy": 0.7333333333333333,
+      "n": 300,
+      "per_class": {
+        "SUPPORTS": {
+          "precision": 0.7874015748031497,
+          "recall": 0.8064516129032258,
+          "f1": 0.796812749003984,
+          "n": 124
+        },
+        "REFUTES": {
+          "precision": 0.65625,
+          "recall": 0.65625,
+          "f1": 0.65625,
+          "n": 64
+        },
+        "NOT_ENOUGH_INFO": {
+          "precision": 0.7155963302752294,
+          "recall": 0.6964285714285714,
+          "f1": 0.7058823529411765,
+          "n": 112
+        }
+      }
+    },
+    "claim_macro_f1_ci95": [
+      0.6670454860022758,
+      0.7718708356339834
+    ],
+    "official_scifact": {
+      "abstract_label_only": {
+        "precision": 0.7246376811594203,
+        "recall": 0.4784688995215311,
+        "f1": 0.5763688760806917
+      },
+      "abstract_label_rationale": {
+        "precision": 0.6376811594202898,
+        "recall": 0.42105263157894735,
+        "f1": 0.5072046109510087
+      },
+      "sentence_selection": {
+        "precision": 0.6062176165803109,
+        "recall": 0.319672131147541,
+        "f1": 0.4186046511627907
+      },
+      "sentence_selection_label": {
+        "precision": 0.5595854922279793,
+        "recall": 0.29508196721311475,
+        "f1": 0.38640429338103754
+      }
+    }
+  },
+  "majority_baseline": {
+    "macro_f1": 0.19496855345911948,
+    "accuracy": 0.41333333333333333,
+    "n": 300,
+    "per_class": {
+      "SUPPORTS": {
+        "precision": 0.41333333333333333,
+        "recall": 1.0,
+        "f1": 0.5849056603773585,
+        "n": 124
+      },
+      "REFUTES": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 64
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 112
+      }
+    }
+  },
+  "oracle_rationale_labels": {
+    "macro_f1": 0.7908545375938373,
+    "accuracy": 0.7987616099071208,
+    "n": 323,
+    "per_class": {
+      "SUPPORTS": {
+        "precision": 0.8991596638655462,
+        "recall": 0.7753623188405797,
+        "f1": 0.8326848249027238,
+        "n": 138
+      },
+      "REFUTES": {
+        "precision": 0.8703703703703703,
+        "recall": 0.6619718309859155,
+        "f1": 0.752,
+        "n": 71
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.6933333333333334,
+        "recall": 0.9122807017543859,
+        "f1": 0.7878787878787878,
+        "n": 114
+      }
+    }
+  },
+  "oracle_abstract_scores": {
+    "abstract_label_only": {
+      "precision": 0.9292035398230089,
+      "recall": 0.5023923444976076,
+      "f1": 0.6521739130434783
+    },
+    "abstract_label_rationale": {
+      "precision": 0.8053097345132744,
+      "recall": 0.4354066985645933,
+      "f1": 0.5652173913043478
+    },
+    "sentence_selection": {
+      "precision": 0.7407407407407407,
+      "recall": 0.32786885245901637,
+      "f1": 0.45454545454545453
+    },
+    "sentence_selection_label": {
+      "precision": 0.6851851851851852,
+      "recall": 0.30327868852459017,
+      "f1": 0.42045454545454547
+    }
+  },
+  "stock_weights": {
+    "claim_level": {
+      "macro_f1": 0.6325707131204309,
+      "accuracy": 0.65,
+      "n": 300,
+      "per_class": {
+        "SUPPORTS": {
+          "precision": 0.875,
+          "recall": 0.5645161290322581,
+          "f1": 0.6862745098039217,
+          "n": 124
+        },
+        "REFUTES": {
+          "precision": 0.5925925925925926,
+          "recall": 0.5,
+          "f1": 0.5423728813559322,
+          "n": 64
+        },
+        "NOT_ENOUGH_INFO": {
+          "precision": 0.5602409638554217,
+          "recall": 0.8303571428571429,
+          "f1": 0.6690647482014389,
+          "n": 112
+        }
+      }
+    },
+    "claim_macro_f1_ci95": [
+      0.5729462267138397,
+      0.6883898594696768
+    ],
+    "official_scifact": {
+      "abstract_label_only": {
+        "precision": 0.7164179104477612,
+        "recall": 0.45933014354066987,
+        "f1": 0.5597667638483965
+      },
+      "abstract_label_rationale": {
+        "precision": 0.6492537313432836,
+        "recall": 0.41626794258373206,
+        "f1": 0.5072886297376092
+      },
+      "sentence_selection": {
+        "precision": 0.3504273504273504,
+        "recall": 0.3360655737704918,
+        "f1": 0.34309623430962344
+      },
+      "sentence_selection_label": {
+        "precision": 0.30484330484330485,
+        "recall": 0.2923497267759563,
+        "f1": 0.298465829846583
+      }
+    }
+  },
+  "stock_nli_oracle_rationale_labels": {
+    "macro_f1": 0.7093454276552867,
+    "accuracy": 0.7120743034055728,
+    "n": 323,
+    "per_class": {
+      "SUPPORTS": {
+        "precision": 0.9032258064516129,
+        "recall": 0.6086956521739131,
+        "f1": 0.7272727272727272,
+        "n": 138
+      },
+      "REFUTES": {
+        "precision": 0.6901408450704225,
+        "recall": 0.6901408450704225,
+        "f1": 0.6901408450704225,
+        "n": 71
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.610062893081761,
+        "recall": 0.8508771929824561,
+        "f1": 0.7106227106227105,
+        "n": 114
+      }
+    }
+  }
+}
